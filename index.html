@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dreamTe</title>
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href=" css/style.css" rel="stylesheet" type="text/css">
+    <script src="script/lib/cookie.js"></script>
+</head>
+<body>
+
+    <div class="section">
+        <header>
+            <h1>Select Dream Team</h1>
+        </header>
+        <div class="filter">
+            <input class="filter-btn" value="Возростание" type="button" id="filter-sort-up">
+            <input class="filter-btn" value="Убывание" type="button" id="filter-sort-down">
+        </div>
+
+        <div class="field">
+            <div class="player-list flex-container">
+
+            </div>
+            <!--<div class="btn-container">-->
+                <!--<a class="btn-show">more</a>-->
+            <!--</div>-->
+        </div>
+        <footer class="main-footer">
+
+        </footer>
+    </div>
+    <template id="template">
+        <article class="player-link player">
+            <div class="player-photo"></div>
+            <span class="player-name"></span>
+            <div class="player-team">
+                <div class="player-team-logo"></div>
+                <span class="player-team-name"></span>
+            </div>
+            <a class="player-rating"  title="Уровень"></a>
+            <div class="second-info">
+                <div class="player-position"></div>
+                <div class="player-age">
+                    <span>Возраст</span>
+                    <span class="player-age-number"></span>
+                </div>
+                <div class="player-nation">
+                    <span></span>
+                    <span class="nation-flag"></span>
+                </div>
+            </div>
+
+        </article>
+    </template>
+<div class="modal-layer">
+
+    <div class="close-btn">X</div>
+
+    <div class="modal-content">
+
+        <div class=" gallery gallery-window">
+            <div class="gallery-window-image">
+            </div>
+            <div class="gallery-control">
+                <div class="control-btn control-left" data-index="-1"></div>
+                <div class="control-btn control-right" data-index="1"></div>
+            </div>
+        </div>
+        <div class="gallery gallery-list">
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+<script src="script/gallery.js"></script>
+<script src="script/player-list.js"></script>
+<script src="script/player.js"></script>
+<!--<script src="script/main.js"></script>-->
+</html>

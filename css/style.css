@@ -1,0 +1,324 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+*{
+    color: #333333;
+}
+.section{
+    margin: auto;
+    max-width: 800px;
+    /* height: 100vh; */
+    /*border: 2px solid #506580;*/
+    background-color: rgba(214, 214, 214, 0.31);
+}
+/*@keyframes animation-h1-left{*/
+    /*100%{*/
+        /*left: 50%;*/
+        /*background-color: rgb(255, 250, 225);*/
+
+    /*}*/
+/*}*/
+/*@keyframes animation-h1-right{*/
+    /*100%{*/
+        /*right: 50%;*/
+        /*background-color: rgb(255, 250, 225);*/
+
+    /*}*/
+/*}*/
+header{
+    border-radius: 5px;
+    box-shadow: 0px 1px 4px 0px #333333;
+    text-align: center;
+    width: 100%;
+    padding: 30px 0;
+    background-color: #417d95;
+}
+.main-footer{
+    height: 200px;
+    background-color: #417d95;
+}
+h1{
+    display: inline;
+    font-family: 'Shadows Into Light', cursive;
+    color: white;
+    font-size: 50px;
+    position: relative;
+}
+h1:after{
+    display: block;
+    content: "";
+    width: 50%;
+    height: 5px;
+    background-color: #d80056;
+    position: absolute;
+    left: -10%;
+    bottom: 0;
+    animation-name: animation-h1-left;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+h1:before{
+    display: block;
+    content: "";
+    width: 50%;
+    height: 5px;
+    background-color: #d80056;
+    position: absolute;
+    right: -10%;
+    top: 0;
+    animation-name: animation-h1-right;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.filter-btn{
+    padding: 10px;
+    background-color: #d80056;
+}
+.filter{
+    border: 1px solid #8d9a97;
+}
+.field{
+    padding-top: 20px;
+    font-family: 'Oswald', sans-serif;
+    height: auto;
+}
+.player{
+    margin-bottom:  50px;
+    transition:all 0.3s ease;
+    display: inline-block;
+    width: 280px;
+    height: 420px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.56);
+}
+.player:not(.start){
+    opacity: 0;
+    transform: translateX(-100px);
+}
+.player.new{
+    transform: translateX(0px);
+    opacity: 1;
+    transition-duration:0.3s;
+
+}
+.player-link{
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn-container{
+    text-align: center;
+}
+.btn-show{
+    box-sizing: border-box;
+    height: 30px;
+    width: 50px;
+    margin: 10px;
+    border: 1px solid #333333;
+    display:  inline-block;
+    box-shadow: 2px 1px 4px 1px #333333;
+    background-color: #00b9aa;
+    cursor: pointer;
+}
+.player-photo{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #D6D6D6;
+    background-size: 100% 100%;
+}
+.player-rating{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 50px;
+    width: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.56);
+    color: rgb(255, 250, 225);
+    border-radius: 50%;
+    margin: 5px 5px 0 0;
+    text-align: center;
+    cursor: pointer;
+}
+.flex-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.player-name{
+    display: block;
+    height: 40px;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    color: #333333;
+    background-color: #c1dee2;
+}
+.disable{
+    display: none;
+}
+.player-position{
+    width: 30%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    border-right: 2px solid darkgray;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+}
+.second-info>div{
+    display: inline-block;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 50px;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+.player-team{
+    line-height: 40px;
+    text-align: center;
+    padding-top: 5px;
+}
+.player-age{
+    width: 40%;
+    text-align: center;
+    border-right: 2px solid darkgray;
+}
+.player-age-number{
+    display: inline-block;
+}
+.player-age>span{
+    vertical-align: baseline;
+}
+.player-nation{
+    text-align: center;
+    width: 30%;
+    line-height: 30px!important;
+}
+.player-team-logo{
+    display: block;
+    width: 50px;
+    height: 60px;
+    background-size: 100% 100%;
+    margin: auto;
+}
+.player-team-name{
+    display: inline-block;
+    height: 20px;
+}
+.player-nation .nation-flag{
+    margin: auto;
+    width: 20px;
+    height: 15px;
+    display: block;
+    background-size: 100% 100%;
+}
+.modal-layer{
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 2% 7%;
+}
+.modal-layer.show{
+    display: block;
+}
+.close-btn{
+    position: absolute;
+    right: 20px;
+    background-color: black;
+    color: white;
+    top: 20px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+}
+.modal-content{
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px 2px #333333;
+}
+.gallery{
+    display: inline-block;
+    height: 100%;
+    float: left;
+}
+.gallery-window{
+    width: 80%;
+    position: relative;
+
+    top: 0;
+}
+.gallery-window-image{
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    background-position: 0;
+    background-repeat: no-repeat;
+}
+.gallery-list{
+    width: 20%;
+}
+.gallery-list img{
+    width: 100%;
+    background-color: #9bff72;
+    height: 25%;
+    cursor: pointer;
+    float:  left;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.gallery-list img:hover{
+    opacity: 0.5;
+}
+.gallery-list img.active{
+    opacity: 0.2;
+}
+.gallery-control{
+    width: 100%;
+    height: 100%;
+
+}
+.control-btn{
+    position: absolute;
+    width: 40px;
+    top : 50%;
+    height: 40px;
+    border-left: 3px solid #fffae1;
+    border-bottom: 3px solid #fffae1;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.control-left{
+    left: 2%;
+    transform: rotate(45deg)
+}
+.control-right{
+    right: 2%;
+    transform: rotate(-135deg)
+}
+.control-btn.control-left:hover{
+    transform: rotate(45deg) scale(1.1);
+}
+.control-btn.control-right:hover{
+    transform: rotate(-135deg) scale(1.1);
+}

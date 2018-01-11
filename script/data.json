@@ -1,0 +1,109 @@
+{
+  "nations":
+    {
+      "Brazil": "Brazil.jpg",
+      "Argentina": "argent.png",
+      "Portugal": "Portugal.png",
+      "Spain": "spain.png",
+      "France": "france.jpg",
+      "Ukraine": "ukraine.jpg",
+      "Uruguay": "Uruguay.png"
+    },
+  "teams":
+    {
+      "FC REAL MADRID": "real-madrid-logo.png",
+      "Liverpool FC": "liverpool.png",
+      "FC Barcelona": "barcelona.png",
+      "FC PSG": "FC_Paris_Saint-Germain_Logo.png",
+      "FC Manchester City" : "Manchester-City.png",
+      "FC Manchester United": "manchester-united.png"
+    }
+   ,
+  "players":
+  [
+    {
+      "name": "F.Coutinho",
+      "age": 23,
+      "rate": 88,
+      "team": "Liverpool FC",
+      "nation": "Brazil",
+      "position": "ЦАП",
+      "photo": "Phillip-Coutinho.jpg",
+      "images": ["1.jpg", "2.jpg","3.jpg","4.jpg"]
+    },
+    {
+      "name": "C.Ronaldo",
+      "age": 32,
+      "rate": 95,
+      "team": "FC REAL MADRID",
+      "nation": "Portugal",
+      "position": "ПП",
+      "photo": "cr.jpg",
+      "images": ["1.jpg", "2.jpg","3.jpg","4.jpg"]
+    }
+    ,{
+      "name": "L.Messi",
+      "age": 30,
+      "rate": 94,
+      "team": "FC Barcelona",
+      "nation": "Argentina",
+      "position": "ПН",
+      "photo": "leo-messi.jpg"
+    },
+    {
+      "name": "Neymar",
+      "age": 24,
+      "rate": 97,
+      "team": "FC PSG",
+      "nation": "Brazil",
+      "position": "ЛН",
+      "photo": "Neymar.jpg"
+    },
+    {
+      "name": "D.Silva",
+      "age": 29,
+      "rate": 75,
+      "team": "FC Manchester City",
+      "nation": "Spain",
+      "position": "ЦАП",
+      "photo": "silva.jpg"
+    },
+    {
+      "name": "P.Pogba",
+      "age": 24,
+      "rate": 92,
+      "team": "FC Manchester United",
+      "nation": "France",
+      "position": "ЦОП",
+      "photo": "pogba.jpg"
+
+    },
+    {
+      "name": "O.Zincenko",
+      "age": 20,
+      "rate": 67,
+      "team": "FC Manchester City",
+      "nation": "Ukraine",
+      "position": "ЛП",
+      "photo": "az.jpg"
+    },
+    {
+      "name": "Xavi",
+      "age": 34,
+      "rate": 77,
+      "team": "FC Barcelona",
+      "nation": "Spain",
+      "position": "ЦП",
+      "photo": "xavi.jpg"
+    },
+    {
+      "name": "L.Suarez",
+      "age": 28,
+      "rate": 87,
+      "team": "FC Barcelona",
+      "nation": "Uruguay",
+      "position": "ФРВ",
+      "photo": "ls.jpg"
+    }
+  ]
+}
